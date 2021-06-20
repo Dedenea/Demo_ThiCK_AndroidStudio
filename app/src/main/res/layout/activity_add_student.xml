@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent">
+    <EditText
+        android:id="@+id/txtAddAge"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Age"
+        app:layout_constraintEnd_toEndOf="@+id/txtAddName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtAddName"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="332dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="Add Student"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAddName"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Add"
+        android:background="#FF018786"
+        app:layout_constraintEnd_toEndOf="@+id/txtAddAge"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/txtAddAge"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddAge" />
+
+    <Button
+        android:id="@+id/btnBackAdd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnThem"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnThem"
+        app:layout_constraintTop_toBottomOf="@+id/btnThem" />
+</androidx.constraintlayout.widget.ConstraintLayout>
